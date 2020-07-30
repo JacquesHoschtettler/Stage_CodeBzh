@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<XMI xmi.version="1.2" timestamp="2020-07-07T10:16:06" verified="false" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
+<XMI xmi.version="1.2" timestamp="2020-07-07T10:20:55" verified="false" xmlns:UML="http://schema.omg.org/spec/UML/1.4">
  <XMI.header>
   <XMI.documentation>
    <XMI.exporter>umbrello uml modeller http://umbrello.kde.org</XMI.exporter>
@@ -39,7 +39,7 @@
      </UML:Namespace.ownedElement>
      <XMI.extension xmi.extender="umbrello">
       <diagrams resolution="96">
-       <diagram name="Diagramme de classes" showscope="1" snapgrid="0" canvasheight="0" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" isopen="1" textcolor="#000000" documentation="" canvaswidth="0" showopsig="1" snapx="25" showpubliconly="0" linewidth="0" snapy="25" zoom="100" fillcolor="#ffff00" showpackage="1" localid="-1" linecolor="#ff0000" griddotcolor="#d3d3d3" showgrid="0" snapcsgrid="0" xmi.id="uUjLwD0NpqcPS" showops="1" type="1" backgroundcolor="#ffffff" showattsig="1" showatts="1" showattribassocs="1" showstereotype="1">
+       <diagram name="Diagramme de classes" showscope="1" snapgrid="0" canvasheight="0" usefillcolor="1" font="Noto Sans,10,-1,0,50,0,0,0,0,0,Regular" isopen="0" textcolor="#000000" documentation="" canvaswidth="0" showopsig="1" snapx="25" showpubliconly="0" linewidth="0" snapy="25" zoom="100" fillcolor="#ffff00" showpackage="1" localid="-1" linecolor="#ff0000" griddotcolor="#d3d3d3" showgrid="0" snapcsgrid="0" xmi.id="uUjLwD0NpqcPS" showops="1" type="1" backgroundcolor="#ffffff" showattsig="1" showatts="1" showattribassocs="1" showstereotype="1">
         <widgets/>
         <messages/>
         <associations/>
@@ -221,7 +221,7 @@
   </UML:Model>
  </XMI.content>
  <XMI.extensions xmi.extender="umbrello">
-  <docsettings viewid="uGOoiRcUu0qyf" uniqueid="us2cd3baGAkD1" documentation=""/>
+  <docsettings viewid="uGOoiRcUu0qyf" uniqueid="uQd5q2jT7xrG1" documentation=""/>
   <listview>
    <listitem id="Views" type="800" open="1">
     <listitem id="Entity_Relationship_Model" type="836" open="1"/>
