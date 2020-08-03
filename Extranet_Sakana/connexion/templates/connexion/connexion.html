@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Sakana Consulants : Connexion{% endblock %}
+{% block content %} Connexion au site
+Ce site est protégé et privé. Toute intrusion non autorisée sera poursuivi selon la loi.
+<h1>Se connecter au site</h1>
+    {% if error %}
+        <p><strong>Utilisateur inconnu ou mauvais mot de passe</strong></p>
+    {% endif %}
+
+    {% if user.is_authenticated %}
+        <p>Vous êtes connecté, {{ user.username }}!</p>
+    {% else %}
+        <form method="post" action=".">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Se connecter"/>
+        </form>
+    {% endif %}
+
+{% endblock %}

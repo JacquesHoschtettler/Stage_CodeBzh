@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base.css">
+    <title>{% block title %} Sakana Consultants {% endblock %}</title>
+</head>
+<body>
+<header> <img src="{{ logo.logo.url }}"
+            alt="Logo de Sakana Consultants">
+    Consultants</header>
+    <nav>
+        {% block nav %}
+        {% endblock %}
+    </nav>
+    <section id="content">
+        {% block content %}
+        {% endblock %}
+    </section>
+    <footer>&copy; Sakana Consultants : mentions légales</footer>
+</body>
+</html>
