@@ -1,0 +1,30 @@
+
+header
+{
+    border : 15px blue outset;
+    border-radius : 20px;
+    padding : 10px ;
+}
+
+#logo
+{
+    border : 10px green inset;
+    size : 50% ;
+    font-size : xx-large ;
+    font-weight : bold ;
+    font-color : blue ;
+}
+
+#footer
+{
+    font-color: blue ;
+    position : fixed ;
+    bottom : 50 px ;
+}
+
+footer
+{
+    font-color: pink ;
+    position : fixed ;
+    bottom : 50 px ;
+}

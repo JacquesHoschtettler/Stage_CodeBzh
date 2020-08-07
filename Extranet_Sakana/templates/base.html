@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="base.css">
+    {% load static %}
+    <link rel="stylesheet"
+          href="{% static 'base.css' %}">
+    {% block appareance %} {% endblock %}
     <title>{% block title %} Sakana Consultants {% endblock %}</title>
 </head>
 <body>
-<header> <img src="{{ logo.logo.url }}"
-            alt="Logo de Sakana Consultants">
+<header> <img src="{% static 'logo_Sakana.jpg' %}"
+            alt="Logo de Sakana Consultants"
+            id = "logo">
     Consultants</header>
     <nav>
         {% block nav %}
@@ -17,6 +21,9 @@
         {% block content %}
         {% endblock %}
     </section>
-    <footer>&copy; Sakana Consultants : mentions légales</footer>
+    <footer >
+        <section id="footer">Sakana Consultants : mentions légales
+        </section>
+    </footer>
 </body>
 </html>

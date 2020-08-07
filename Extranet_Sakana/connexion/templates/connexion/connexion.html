@@ -1,7 +1,15 @@
 {% extends "base.html" %}
+
+{% block appareance %}
+    {% load static %}
+   <link rel="stylesheet"
+          href="{% static 'connexion.css' %}">
+{% endblock %}
+
 {% block title %}Sakana Consulants : Connexion{% endblock %}
 {% block content %} Connexion au site
-Ce site est protégé et privé. Toute intrusion non autorisée sera poursuivi selon la loi.
+<p class="advertissement">Ce site est privé et protégé.
+    Toute intrusion non autorisée sera poursuivi selon la loi. </p>
 <h1>Se connecter au site</h1>
     {% if error %}
         <p><strong>Utilisateur inconnu ou mauvais mot de passe</strong></p>
