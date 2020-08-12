@@ -6,23 +6,24 @@
           href="{% static 'connexion.css' %}">
 {% endblock %}
 
-{% block title %}Sakana Consulants : Connexion{% endblock %}
-{% block content %} Connexion au site
+{% block content %}
 <p class="advertissement">Ce site est privé et protégé.
     Toute intrusion non autorisée sera poursuivi selon la loi. </p>
-<h1>Se connecter au site</h1>
-    {% if error %}
-        <p><strong>Utilisateur inconnu ou mauvais mot de passe</strong></p>
-    {% endif %}
+<h1 id="titre_connexion">Se connecter au site</h1>
+    <section id="formulaire">
+        {% if error %}
+            <p><strong>Utilisateur inconnu ou mauvais mot de passe</strong></p>
+        {% endif %}
 
-    {% if user.is_authenticated %}
-        <p>Vous êtes connecté, {{ user.username }}!</p>
-    {% else %}
-        <form method="post" action=".">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit" value="Se connecter"/>
-        </form>
-    {% endif %}
+        {% if user.is_authenticated %}
+            <p>Vous êtes connecté, {{ user.username }}!</p>
+        {% else %}
+            <form method="post" action=".">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Se connecter"/>
+            </form>
+        {% endif %}
+    </section>
 
 {% endblock %}

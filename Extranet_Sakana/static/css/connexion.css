@@ -1,7 +1,25 @@
 .advertissement
 {
-    color:green ;
-    font-size : x-large ;
+    color:red ;
+    font-size : xx-large ;
     font-weight : bold ;
+    text-align : center ;
+    padding : 20px ;
+}
+
+#titre_connexion
+{
+    width : 400px ;
+    margin : auto ;
+    padding : 50px ;
+    font-weight : bold ;
+    font-size : x-large ;
+    font-color : Green ;
+}
+
+#formulaire
+{
+    margin : 10% ;
+    font-size : large ;
     text-align : center ;
 }

@@ -11,8 +11,9 @@
 <body>
 <header> <img src="{% static 'logo_Sakana.jpg' %}"
             alt="Logo de Sakana Consultants"
-            id = "logo">
-    Consultants</header>
+            id="logo">
+    <div id="entreprise">Sakana Consultants</div>
+    </header>
     <nav>
         {% block nav %}
         {% endblock %}
@@ -22,8 +23,58 @@
         {% endblock %}
     </section>
     <footer >
-        <section id="footer">Sakana Consultants : mentions légales
-        </section>
+        <h3>Mentions légales</h3>
+        <div id="mentions_legales">
+            <div id="identification">
+            <h4>Identification</h4>
+                <ul class="liste_legale">
+                    <li>SAKANA CONSULTANTS</li>
+                    <li>39, Bd du Commandant Mouchotte, 29200 BREST, France</li>
+                    <li>Tél. : +33 222 068 138 (landline) or +33 601 630 558 (Sébastien’s mobile) ;
+                        courriel : info _at_ sakana-consultants _dot_ com</li>
+                    <li>Société par Actions Simplifiées (SAS)</li>
+                    <li>Capital social : 5 000,00 €</li>
+                    <li>Président : M. Sébastien Metz</li>
+                    <li>Nom, dénomination ou raison sociale et adresse et numéro de téléphone de
+                    l'hébergeur de son site</li>
+                </ul>
+            </div>
+            <div id="activite">
+            <h4>Activité</h4>
+                <ul class="liste_legale">
+                    <li>Bureau d’études installé à Brest depuis février 2015, Sakana Consultants réalise
+                        des études économiques pour le secteur halieutique (pêche et aquaculture) avec
+                        une forte connotation internationale (UE, Royaume-Uni, USA, Asie du Sud-Est et
+                        Afrique).</li>
+                    <li>Secteur (Code NAF) : Conseil pour les affaires et autres conseils de
+                        gestion (7022Z)</li>
+                    <li>Inscription RCS :  le 04/03/2015</li>
+                    <li>SIREN : 809558281 ; SIRET : 80955828100022</li>
+                    <li>N° TVA : FR10809558281</li>
+                    <li>Conditions générales de vente (CGV) incluant le prix TTC en euros,
+                    les frais et date de livraison, les modalités de paiement, le service après
+                    vente, le droit de rétractation, la durée de l'offre, le coût de la communication
+                    à distance</li>
+                </ul>
+            </div>
+            <div id="donnees_perso">
+            <h4>Utilisation des données personnelles</h4>
+                <ul class="liste_legale">
+                <li>Coordonnées du délégué à la protection des données (DPO ou DPD) de l'organisme,
+                    s'il a été désigné, ou d'un point de contact sur les questions de protection des
+                    données personnelles</li>
+                <li>Les données sont destinées au contrôle des accèse de ce site.</li>
+                <li>Seul l'administrateur du site a accès aux données.</li>
+                <li>Pour faire valoir vos droits d'opposition, d'interrogation, d'accès et de
+                    rectification, veuillez vous adresser au président de la société.</li>
+                <li>Les données à caractère personnel restent au siège de la société.</li>
+                <li>Base juridique du traitement de données (c'est-à-dire ce qui autorise légalement
+                le traitement : il peut s'agir du consentement des personnes concernées, du respect
+                d'une obligation prévue par un texte, de l'exécution d'un contrat notamment)</li>
+                <li>Vous avez le droit d'introduire une réclamation (plainte) auprès de la Cnil.</li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
