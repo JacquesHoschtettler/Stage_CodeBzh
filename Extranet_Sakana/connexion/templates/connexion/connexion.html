@@ -18,10 +18,10 @@
         {% if user.is_authenticated %}
             <p>Vous êtes connecté, {{ user.username }}!</p>
         {% else %}
-            <form method="post" action=".">
+            <form id="saisie" method="post" action=".">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <input type="submit" value="Se connecter"/>
+                <input id="login_btn" type="submit" value="Se connecter"/>
             </form>
         {% endif %}
     </section>

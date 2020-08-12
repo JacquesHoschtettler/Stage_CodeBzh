@@ -9,7 +9,7 @@ body, html{
 }
 
 header , footer {
-    border : 15px blue outset;
+    border : 5px blue outset;
     border-radius : 50px;
     padding : 10px ;
     background : #20B2AA ;
