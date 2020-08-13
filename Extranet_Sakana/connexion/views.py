@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect, reverse
+from django.contrib.auth import authenticate, login, logout
 # from django.contrib.auth.models import User
 
 from .forms import ConnexionForm
@@ -19,4 +19,10 @@ def connexion(request):
                 error = True
     else:
         form = ConnexionForm()
+    return render(request, 'connexion/connexion.html', locals())
+
+
+def deconnexion(request):
+    logout(request)
+    form = ConnexionForm()
     return render(request, 'connexion/connexion.html', locals())

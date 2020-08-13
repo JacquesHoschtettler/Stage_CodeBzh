@@ -12,11 +12,16 @@
 <h1 id="titre_connexion">Se connecter au site</h1>
     <section id="formulaire">
         {% if error %}
+        <div class="info">
             <p><strong>Utilisateur inconnu ou mauvais mot de passe</strong></p>
+        </div>
         {% endif %}
 
         {% if user.is_authenticated %}
+        <div class="info">
             <p>Vous êtes connecté, {{ user.username }}!</p>
+            <button id="logout_btn"><a href ="{%url 'deconnexion' %}">Déconnexion</a></button>
+        </div>
         {% else %}
             <form id="saisie" method="post" action=".">
                 {% csrf_token %}

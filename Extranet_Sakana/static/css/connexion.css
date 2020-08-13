@@ -33,6 +33,19 @@
     text-align : center ;
 }
 
+.info
+{
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : space_around ;
+    padding-bottom : 15% ;
+    font-size : large ;
+    font-color : green ;
+    font-weight : bold ;
+    text-align : center ;
+}
+
 #saisie
 {
     display : flex ;
@@ -55,6 +68,7 @@
     border-radius : 50% ;
     margin-left : 20px ;
     padding : 10px ;
+    width : 10% ;
 }
 
 #login_btn:hover
@@ -69,3 +83,25 @@
     background : #CD853F ;
 }
 
+#logout_btn
+{
+    border-radius : 50% ;
+    padding : 10px ;
+    width : 10% ;
+    heigth : 10% ;
+    margin : auto ;
+    font-color : Black ;
+    text-decoration : none ;
+}
+
+#logout_btn:hover
+{
+    font-weight : bold ;
+    background : #00FF7F ;
+}
+
+#logout_btn:active
+{
+    font-weight : bold ;
+    background : #CD853F ;
+}
