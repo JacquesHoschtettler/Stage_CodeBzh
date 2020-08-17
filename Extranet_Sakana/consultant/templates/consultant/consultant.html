@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block appareance %}
+    {% load static %}
+   <link rel="stylesheet"
+          href="{% static 'consultant.css' %}">
+{% endblock %}
+
+{% block content %}
+      <div>
+            <p class="info"> {{ msg }}</p>
+            <button id="logout_btn" >
+                <a href ="{%url 'deconnexion' %}">Déconnexion</a>
+            </button>
+      </div>
+{% endblock %}

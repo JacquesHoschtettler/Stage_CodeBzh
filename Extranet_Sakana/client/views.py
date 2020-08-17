@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def client(request):
+    msg = "Vous êtes bien connecté " + request.user.username + " !"
+    return render(request, 'client/client.html', locals())

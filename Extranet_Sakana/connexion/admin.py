@@ -1,18 +1,13 @@
 from django.contrib import admin
-from django.contrib.admin import AdminSite
 
-from django.contrib.auth.models import User, Group, Permission
+from django.contrib.auth.models import Permission
 
-
-class MyAdminSite(AdminSite):
-    site_header = "Administration de l'extranet Sakana Consultants"
+from .models import ExtensionUser
 
 
-class MyAdmin(admin.ModelAdmin):
-    pass
+class MyExtensionAdmin(admin.ModelAdmin):
+    list_display = ['user', 'nb_trials']
 
 
-admin_site = MyAdminSite(name="SakanaAdmin")
-admin_site.register(User)
-admin_site.register(Group)
-admin_site.register(Permission)
+admin.site.register(Permission)
+admin.site.register(ExtensionUser, MyExtensionAdmin)
