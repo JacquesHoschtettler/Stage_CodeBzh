@@ -1,47 +1,30 @@
+/* Buttons appareance and comportement */
 .button
 {
-    border-radius : 50% ;
-    background-color : #4CAF50 ;
-    margin-left : 50px ;
-    padding : 10px ;
-    width : 15% ;
-    heigth : width ;
+    display : inline-block ;
+    border : none ;
+    border-radius : 20% ;
+    background-color : #3e8e41 ;
+    margin-left : 0px ;
+    padding : 5px 10px ;
     color : #fff ;
-    font-size : 16px ;
+    font-size : medium ;
     text-align : center ;
     text-decoration : none ;
-    display : inline-block ;
-    cusor : pointer ;
-    transition-duration : 1s ;
-    box-shadow: 0 9px #999;
+    cursor : pointer ;
+    transition-duration : 0.2s ;
+    box-shadow: 0px 10px #999;
 }
 
 .button:hover
 {
     font-weight : bold ;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+    background-color: #4CAF50 ;
 }
 
-#logout_btn
-{
-    border-radius : 50% ;
-    padding : 20px ;
-    width : 10% ;
-    heigth : 10% ;
-    margin : auto ;
-    font-color : Black ;
-    text-decoration : none ;
-}
-
-#logout_btn:hover
+.button:active
 {
     font-weight : bold ;
-    background : #00FF7F ;
-}
-
-#logout_btn:active
-{
-    font-weight : bold ;
-    background : #CD853F ;
+    box-shadow: 0px 4px #666;
+    transform: translateY(10px) ;
 }

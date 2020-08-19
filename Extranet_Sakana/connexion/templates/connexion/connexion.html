@@ -6,9 +6,12 @@
           href="{% static 'connexion.css' %}">
 {% endblock %}
 
+{% block nav %}
+{% endblock %}
+
 {% block content %}
 <p class="advertissement">Ce site est privé et protégé. <br>
-    Toute intrusion non autorisée sera poursuivi selon la loi. </p>
+    Toute intrusion non autorisée sera poursuivie selon la loi. </p>
 <h1 id="titre_connexion">Se connecter au site</h1>
     <section id="formulaire">
         {% if error %}
@@ -20,7 +23,7 @@
             <form id="saisie" method="post" action=".">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <input class="button" type="submit" value="Se connecter"/>
+                <button class="button" type="submit">Se connecter</button>
             </form>
         {% endif %}
     </section>

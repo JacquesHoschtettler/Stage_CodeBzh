@@ -9,19 +9,22 @@
     <title>{% block title %} Sakana Consultants {% endblock %}</title>
 </head>
 <body>
-<header> <img src="{% static 'logo_Sakana.jpg' %}"
-            alt="Logo de Sakana Consultants"
-            id="logo">
-    <div id="entreprise">Sakana Consultants</div>
+    <header>
+        <img src="{% static 'logo_Sakana.jpg' %}" alt="Logo de Sakana Consultants" id="logo">
+        <div id="entreprise">Sakana Consultants</div>
     </header>
-    <nav>
-        {% block nav %}
-        {% endblock %}
-    </nav>
-    <section id="content">
-        {% block content %}
-        {% endblock %}
-    </section>
+    <div id="body_core">
+        <nav>
+            <h1>Navigation</h1>
+            <a class="button" href="{% url 'contact' %}">Nous contacter</a>
+            {% block nav %}
+            {% endblock %}
+        </nav>
+        <section id="content">
+            {% block content %}
+            {% endblock %}
+        </section>
+    </div>
     <footer >
         <h3>Mentions légales</h3>
         <div id="mentions_legales">

@@ -23,7 +23,6 @@
 {
     border : 2px black solid ;
     border-radius : 15px;
-   /* margin-top : 5% ;*/
     margin-left : 10% ;
     margin-right : 10% ;
     padding-top : 10% ;
@@ -65,48 +64,3 @@
     margin : 30px ;
     padding : 15 px ;
 }
-
-/*
-#login_btn
-{
-    border-radius : 50% ;
-    margin-left : 50px ;
-    padding : 10px ;
-    width : 20% ;
-}
-
-#login_btn:hover
-{
-    font-weight : bold ;
-    background : #00FF7F ;
-}
-
-#login_btn:active
-{
-    font-weight : bold ;
-    background : #CD853F ;
-}
-
-#logout_btn
-{
-    border-radius : 50% ;
-    padding : 20px ;
-    width : 10% ;
-    heigth : 10% ;
-    margin : auto ;
-    font-color : Black ;
-    text-decoration : none ;
-}
-
-#logout_btn:hover
-{
-    font-weight : bold ;
-    background : #00FF7F ;
-}
-
-#logout_btn:active
-{
-    font-weight : bold ;
-    background : #CD853F ;
-}
-*/

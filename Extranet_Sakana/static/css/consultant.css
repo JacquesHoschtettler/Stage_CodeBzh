@@ -1,28 +1,20 @@
+@import 'common_elements.css' ;
+
 .info
 {
     color : pink ;
     text-align : center ;
+    font-weight : bold ;
+    font-size : large ;
+    paddig : 15 px ;
 }
 
-#logout_btn
+.new_box
 {
-    border-radius : 50% ;
+    height : 250px ;
     padding : 20px ;
-    width : 10% ;
-    heigth : 10% ;
-    margin : auto ;
-    font-color : Black ;
-    text-decoration : none ;
-}
-
-#logout_btn:hover
-{
-    font-weight : bold ;
-    background : #00FF7F ;
-}
-
-#logout_btn:active
-{
-    font-weight : bold ;
-    background : #CD853F ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : space-around ;
+    align-items : center ;
 }

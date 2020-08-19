@@ -7,10 +7,8 @@
 {% endblock %}
 
 {% block content %}
-      <div>
-            <p class="info"> {{ msg }}</p>
-            <button id="logout_btn" >
-                <a href ="{%url 'deconnexion' %}">Déconnexion</a>
-            </button>
+      <div class="new_box">
+          <p class="info"> {{ msg }}</p>
+          <a class="button" href ="{%url 'deconnexion' %}">Déconnexion</a>
       </div>
 {% endblock %}

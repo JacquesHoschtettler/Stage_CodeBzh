@@ -3,13 +3,12 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User, Group
 
 from .models import ExtensionUser
-from .forms import ConnexionForm
+from .forms import ConnexionForm, ContactForm
 
 
 def connexion(request):
     error = False
     try_again = True
-    msg = "Bonjour, veuillez saisir vos identifiants, s'il vous plaît."
     if request.method == "POST":
         form = ConnexionForm(request.POST)
         if form.is_valid():
@@ -81,3 +80,17 @@ def deconnexion(request):
     logout(request)
     form = ConnexionForm()
     return redirect(reverse('connexion'))
+
+
+# ------------------ contace the team method -------------
+def contact(request):
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        subject = form.cleaned_data["subject"]
+        sender = form.cleaned_data["sender"]
+        message = form.cleaned_data["message"]
+        backSend = form.cleaned_data["backSend"]
+    else:
+        form = ContactForm()
+
+    return render(request, 'connexion/contact.html', locals())
