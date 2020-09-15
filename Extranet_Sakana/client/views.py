@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.utils.translation import ugettext as _
 
 
 def client(request):
-    msg = "Vous êtes bien connecté " + request.user.username + " !"
+    msg = _("Bienvenue ") + request.user.username + _(" !")
     return render(request, 'client/client.html', locals())

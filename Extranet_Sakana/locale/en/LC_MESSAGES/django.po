@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-15 18:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:31
+msgid "Mentions légales"
+msgstr "Legal notice"
+
+#: templates/base.html:35
+msgid "Identification"
+msgstr "Identity"
+
+#: templates/base.html:39
+msgid "Activité"
+msgstr "Activity"
+
+#: templates/base.html:43
+msgid "Utilisation des données personnelles"
+msgstr "Use of personal data"
+
+#: templates/base.html:47
+msgid "Site officiel"
+msgstr "Official site"
+
+#~ msgid "Navigation"
+#~ msgstr "Browsing"
+
+#~ msgid "Les données sont destinées au contrôle des accès de ce site."
+#~ msgstr "The data are intented to control access to this site."
+
+#~ msgid "Seul l'administrateur du site a accès aux données."
+#~ msgstr "Only the site manager has access to the data."

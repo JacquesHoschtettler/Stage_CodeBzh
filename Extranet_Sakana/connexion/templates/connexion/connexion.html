@@ -1,18 +1,18 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block appareance %}
     {% load static %}
-   <link rel="stylesheet"
-          href="{% static 'connexion.css' %}">
+    <link rel="stylesheet" href="{% static 'connexion.css' %}">
 {% endblock %}
 
 {% block nav %}
+    <a class="button_like" href="{% url 'contact' %}">{{ ContactUs }}</a>
 {% endblock %}
 
 {% block content %}
-<p class="advertissement">Ce site est privé et protégé. <br>
-    Toute intrusion non autorisée sera poursuivie selon la loi. </p>
-<h1 id="titre_connexion">Se connecter au site</h1>
+<p class="advertissement">{{ globalWarning1 }} <br>{{ globalWarning2 }} </p>
+<h1 id="titre">{{connexionTitle}}</h1>
     <section id="formulaire">
         {% if error %}
             <div >
@@ -23,7 +23,7 @@
             <form id="saisie" method="post" action=".">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button class="button" type="submit">Se connecter</button>
+                <button class="button" type="submit">{{connexionButton}}</button>
             </form>
         {% endif %}
     </section>

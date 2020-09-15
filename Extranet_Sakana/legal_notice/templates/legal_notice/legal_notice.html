@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block appareance %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'legal_notice.css' %}">
+{% endblock %}
+
+{% block nav %}
+    <a class="button_like" href ="{%url 'return_from_contact' %}">Retour</a>
+{% endblock %}
+
+{% block content %}
+    <div class="LegalNotice">
+        <h1>{{ NoticeLegale }}</h1>
+        <h2>{{ titre }}</h2>
+            <ul class="liste_legale">
+                {% for text in NoticeText %}
+                    <li>{{ text }}</li>
+                {% endfor %}
+    </div>
+{% endblock %}

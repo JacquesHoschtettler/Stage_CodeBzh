@@ -7,17 +7,16 @@
 {% endblock %}
 
 {% block nav %}
-      <a class="button" href ="{%url 'deconnexion' %}">Déconnexion</a>
+    <a class="button_like" href ="{%url 'return_from_contact' %}">{{ Return }}</a>
 {% endblock %}
 
 {% block content %}
-<h1 id="titre_connexion">Nous envoyer un message</h1>
-    <section id="formulaire">
-        <form id="saisie" method="post" action=".">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button class="button" type="submit">Envoyer le message</button>
-        </form>
-    </section>
-
+    <h1 id="titre">{{ Message }}</h1>
+        <section id="formulaire">
+            <form id="saisie" method="post" action=".">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="button" type="submit">{{ Sending }}</button>
+            </form>
+        </section>
 {% endblock %}

@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-15 18:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: legal_notice/views.py:15
+msgid "Mentions légales"
+msgstr "Legal Notice"
+
+#~ msgid "Identification"
+#~ msgstr "Identity"
+
+#~ msgid "Activité"
+#~ msgstr "Activity"
+
+#~ msgid "Utilisation des données personnelles"
+#~ msgstr "Use of personal data"
+
+#~ msgid "Site officiel"
+#~ msgstr "Official site"
+
+#~ msgid ""
+#~ "Bureau d’études installé à Brest depuis février 2015, Sakana Consultants "
+#~ "réalise des études économiques pour le secteur halieutique (pêche et "
+#~ "aquaculture) avec une forte connotation internationale (UE, Royaume-Uni, "
+#~ "USA, Asie du Sud-Est et Afrique)."
+#~ msgstr ""
+#~ "Design office installed in Brest since February 2015, Sakana Consultants  "
+#~ "carries out economic studies for the fisheries sector (fisheries and "
+#~ "aquaculture) with a strong international connotation (EU, UK, USA, South-"
+#~ "East Asia and Africa)."
+
+#~ msgid ""
+#~ "Conditions générales de vente (CGV) incluant le prix TTC en euros, les "
+#~ "frais et date de livraison, les modalités de paiement, le service après "
+#~ "vente, le droit de rétractation, la durée de l'offre, le coût de la "
+#~ "communication à distance."
+#~ msgstr ""
+#~ "General Terms and Conditions of Sale (GTCS) including the price including "
+#~ "all taxes in euros, the costs and delivery date, the methods of payment, "
+#~ "the after-sales service, the right of withdrawal, the duration of the "
+#~ "offer, the cost of the remote communication."
+
+#~ msgid "Les données sont destinées au contrôle des accès de ce site."
+#~ msgstr "The data are intended to control access to this site."
+
+#~ msgid "Seul l'administrateur du site a accès aux données."
+#~ msgstr "Only the site manager has access to the data."
+
+#~ msgid ""
+#~ "Pour faire valoir vos droits d'opposition, d'interrogation, d'accès et de "
+#~ "rectification, veuillez vous adresser au président de la société."
+#~ msgstr ""
+#~ "To assert your rights of opposition, questioning, access and "
+#~ "rectification, please contact the president of the company."
+
+#~ msgid "Les données à caractère personnel restent au siège de la société."
+#~ msgstr "Personal data shall remain at the company’s registered office."
+
+#~ msgid ""
+#~ "Vous avez le droit d'introduire une réclamation (plainte) auprès de la "
+#~ "Cnil : https://www.cnil.fr/fr/plaintes"
+#~ msgstr ""
+#~ "You have the right to lodge a claim (complaint) with the Cnil: https://"
+#~ "www.cnil.fr/fr/plaintes"

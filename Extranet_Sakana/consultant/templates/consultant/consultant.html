@@ -6,9 +6,12 @@
           href="{% static 'consultant.css' %}">
 {% endblock %}
 
+{% block nav %}
+    <a class="button_like" href ="{%url 'deconnexion' %}">Déconnexion</a>
+{% endblock %}
+
 {% block content %}
       <div class="new_box">
           <p class="info"> {{ msg }}</p>
-          <a class="button" href ="{%url 'deconnexion' %}">Déconnexion</a>
       </div>
 {% endblock %}

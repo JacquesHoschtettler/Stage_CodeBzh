@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block appareance %}
     {% load static %}
@@ -6,11 +7,14 @@
           href="{% static 'client.css' %}">
 {% endblock %}
 
+{% block nav %}
+    <a class="button_like" href="{% url 'contact' %}">{% trans "Nous contacter" %}</a>
+    <a class="button_like" href ="{%url 'deconnexion' %}">{% trans "Déconnexion" %}</a>
+{% endblock %}
+
 {% block content %}
       <div>
             <p class="info"> {{ msg }}</p>
-            <button class="button">
-                <a href ="{%url 'deconnexion' %}">Déconnexion</a>
-            </button>
+
       </div>
 {% endblock %}
