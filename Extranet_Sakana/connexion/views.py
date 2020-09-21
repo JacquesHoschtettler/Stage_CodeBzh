@@ -65,7 +65,7 @@ def init_again_nb_trials(user):
 def connexion_error_management(user):
     try_again = True
     if not user.is_active:
-        msg = _("Votre compte a été désactivé. \n Veuillez contacter l'administrateur "
+        msg = _("Votre compte a été désactivé. Veuillez contacter l'administrateur "
                 "du site.")
         try_again = False
     else:
@@ -74,7 +74,7 @@ def connexion_error_management(user):
         if user_ext.nb_trials <= 0:
             user.is_active = False
             user.save()
-            msg = _("Votre compte a été désactivé. \n Veuillez contacter l'administrateur "
+            msg = _("Votre compte a été désactivé.  Veuillez contacter l'administrateur "
                     "du site.")
             try_again = False
             user_ext.nb_trials = 5
