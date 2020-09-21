@@ -9,12 +9,14 @@ from .forms import ConnexionForm, ContactForm
 
 
 def connexion(request):
+    # Page texts, translated if needed
     browsingTitle = _("Navigation")
     ContactUs = _("Nous contacter")
     globalWarning1 = _("Ce site est privé et protégé.")
     globalWarning2 = _("Toute intrusion non autorisée sera poursuivie selon la loi.")
     connexionTitle = _("Se connecter au site")
     connexionButton = _("Se connecter")
+
     error = False
     try_again = True
     if request.method == "POST":

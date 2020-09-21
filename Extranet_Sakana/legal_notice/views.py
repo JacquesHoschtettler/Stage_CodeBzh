@@ -6,7 +6,7 @@ from .models import LegalNotices
 import os
 
 LegalNocticeLabels = {'identification': 'Identification', 'activity': 'Activité',
-                      'personnalData': 'Utilisation des données personnelles'}
+                      'personalData': 'Utilisation des données personnelles'}
 
 
 def legal_notice(request, name):
@@ -14,11 +14,16 @@ def legal_notice(request, name):
     titre = _(LegalNocticeLabels[name])
     NoticeLegale = _("Mentions légales")
     path = os.path.join(settings.TEXT_URL, notice.file.name)
+    # Opening the file, and reading the content
     NoticeFile = open(path, "r")
     NoticeTextRaw = NoticeFile.read().split("\n")
+
+    # Building the lines of the list, with translation if needed, and erasing the
+    # empty lines.
     NoticeText = []
     for notice in NoticeTextRaw:
         if notice != "":
             NoticeText.append(_(notice))
     NoticeFile.close()
+
     return render(request, 'legal_notice/legal_notice.html', locals())
